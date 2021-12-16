@@ -11,7 +11,7 @@ function App() {
       <h1>Library Catalog</h1>
       <BrowserRouter>
         <Switch>
-          <Route exact path="/home">
+          <Route exact path="/">
             <Home />
           </Route>
           <Route path="/books/:id">
