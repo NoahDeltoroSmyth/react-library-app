@@ -6,7 +6,11 @@ export default function Home() {
     <div>
       <h2>Welcome to Dangalfs Library of Computer Science!</h2>
       <h2>
-        Check out the amazing selection of books in our <Link to="/books">catalog</Link>.
+        Check out the amazing selection of books in our{' '}
+        <Link className="detailcatalog" to="/books">
+          catalog
+        </Link>
+        .
       </h2>
     </div>
   );
