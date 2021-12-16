@@ -2,6 +2,7 @@ import BookList from './views/Books/BookList';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Home from './views/Home/Home';
+import BookDetail from './views/Books/BookDetail';
 
 function App() {
   // TODO: Add routes to books & views
@@ -12,6 +13,9 @@ function App() {
         <Switch>
           <Route exact path="/home">
             <Home />
+          </Route>
+          <Route path="/books/:id">
+            <BookDetail />
           </Route>
           <Route path="/books">
             <BookList />

@@ -9,7 +9,6 @@ function BookDetail() {
   useEffect(() => {
     getBookById(id).then(({ data }) => setBook(data));
   }, [id]);
-
   if (!book) return <h3>Loading book...</h3>;
 
   return <Book book={book} showDetail />;
